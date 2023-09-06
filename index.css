@@ -1,0 +1,600 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: montserrat;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position:relative;
+    overflow:hidden;
+}
+#page{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(to right, white,rgb(235, 204, 204),rgb(235, 171, 235));
+}
+#page>#nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0px 30px;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height:10%;
+}
+#page>img{
+    width: 50%;
+    position: absolute;
+    right:3%;
+    top:10%;
+}
+#nav>img{
+    width:10%;
+}
+#centrenav{
+   display:flex;
+   gap:2rem;
+
+}
+#centrenav>a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+}
+#centrenav>a:hover{
+    border-bottom:2px solid red;
+}
+#nav>#search>input{
+    padding: 10px 5px;
+    border-radius:10px;
+    text-transform: uppercase;
+    border:none;
+    outline:none;
+}
+#text{
+    margin-top:4vmax;
+    padding:40px 40px;
+    height:75%;
+    width:40%;
+    position: relative;
+    top:15%;
+    left:5%;
+    scale:1.1;
+}
+#text>h1{
+    font-size: 3vmax;
+    
+}
+#text>h4{
+    margin-top: 2vmax;
+    font-size:1.5vmax;
+    font-weight: 800;
+}
+#text>h5{
+    padding-top:1vmax;
+    font-size:1vmax; 
+    line-height: 1.5;
+    font-weight: 400;
+}
+#buttons{
+    position:absolute;
+    left:0%;
+    bottom:18%;
+    height:20%;
+    width: 100%;
+    
+}
+#buttons>button{
+    padding:10px 22px;
+    border-radius:10px;
+    border:none;
+    font-weight: 600;
+}
+#text>#buttons>.chat{
+    background-color:#aa87ea ;
+    margin-left: 2vmax;
+}
+.resume{
+    margin-left: 2vmax;
+}
+#buttons>button:hover{
+    cursor: pointer;
+}
+.se{
+    color:rgb(142, 14, 14);
+}
+.wd{
+    color:blue;
+}
+.q{
+position: relative;
+top:30%;
+}
+#tech{
+    color:rgb(93, 137, 248);
+}
+
+#left{
+    position: relative;
+    left:60%;
+    height: 90%;
+    top:50%;
+    width:40%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left>.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    height:33.3%;
+    width: 100%;
+
+    border-top:2px solid black;
+}
+#left>.boxes>.box1>h1{
+    position: relative;
+    right:20%;
+    font-size: 3vmax;
+}
+#left>.boxes>.box1>h3{
+    position: relative;
+    right:15%;
+}
+#left>.boxes>.box1>p{
+    font-weight: 700;
+    position: relative;
+    top:-20%;
+    font-size:1.2vmax;
+}
+#page1 {
+    width:100vw;
+    min-height:100vh;
+    background-image: url("section.jpg");
+    background-size: cover;
+}
+#page1>h1{
+    text-align:center;
+    font-size:4vmax;
+    padding-top:2vmax;
+    color:rgb(198, 2, 2);
+}
+.left>.college{
+    height:20vmax;
+    width:20vmax;
+    padding:1vmax;
+    border-radius: 50%  ;
+    position: relative;
+    top:-10vmax;
+    left:-20vmax;
+    filter:drop-shadow(0px 10px 20px);
+
+
+}
+.left>.blur{
+    width: 30vmax;
+    height: 30vmax;
+    filter:blur(80px);
+}
+.left>h4{
+    position: relative;
+    top:-7vmax;
+    left: 10vmax;
+    font-size:2vmax;
+
+}
+.right>p{
+    height:33.3%;
+    width:50%;
+    position: relative;
+    left:40vmax;
+    bottom:25vmax;
+    font-size:1.7vmax;
+}
+.right>.school{
+    height:20vmax;
+    width:20vmax;
+    padding:1vmax;
+    border-radius: 50%  ;
+    position: relative;
+    left:30vmax;
+    top: -10vmax;
+    
+
+
+    filter:drop-shadow(0px 10px 20px);
+}
+.right>.blur{
+    position: relative;
+    left:60vmax;
+    width: 40vmax;
+    height: 30vmax;
+    filter:blur(80px);
+}
+.left>p{
+    position: relative;
+    top:20vmax;
+    font-weight: 800;
+    font-size:2vmax;
+    padding:2vmax;
+
+}
+.right>h1{
+    position: relative;
+    top:-45vmax;  
+    left:40vmax;
+    font-size:3vmax ;  
+}
+#page2{
+    position: relative;
+    height:100vh;
+    width:100vw;
+    background-image: url("vb.svg");
+    background-size: cover;
+}
+#project{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:50%;
+    width:90%;
+    
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:5%;
+}
+.projects{
+    filter: drop-shadow(4px 10px 5px);
+    border-top: 2px solid black;
+    height:100%;
+    width:32%;
+   
+}
+#text3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vmax 1vmax;
+    height:30%;
+    width: 100%;    
+    
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:2vmax;
+    width:2vmax;
+    border-radius:50%;
+    background-color: #aa87ea;
+}
+.circle>i{
+    color:white;
+    font-size:2vmax;
+}
+#text3>h1{
+    font-weight: 900;
+    font-size:2.5vmax;
+}
+#spotifypage{
+    height:70%;
+    width:100%;
+    background-color: blueviolet;
+    background-image: url("spotify.png");
+    background-size: cover;
+}
+.circle:hover{
+    cursor: pointer;
+}
+#ecommerce{
+    height:70%;
+    width:100%;
+    background-color: blueviolet;
+    background-image: url("ecommerce.png");
+    background-size: cover;
+}
+#portfolio{
+    height:70%;
+    width:100%;
+    background-color: blueviolet;
+    background-image: url("port.png");
+    background-size: cover;
+}
+.p2{
+    position: relative;
+    top:-20%;
+}
+.p3{
+    position: relative;
+    top: -50%;
+}
+#text4{ 
+    position: absolute;
+    top: 10%;
+    left:5%;
+    height:20%;
+    width: 30%;
+}
+#text4>h1{
+    margin-top: 2vmax;
+    font-size:4vmax;
+}
+#text4>h4{
+    transform: rotate(-20deg);
+    position: absolute;
+}
+#page3{
+    height:100vh;
+    width:100vw;
+    background-image: url("back2.jpg");
+    background-size: cover;
+}
+#page3>.myskills{
+    height:40%;
+    width:100%;
+    
+}
+.text-Myskill{
+    height:100%;
+    width: 50%;
+    
+}
+.text-Myskill>h1{
+    position: relative;
+    top:3vmax;
+    text-align: center;
+    font-size:10vmax;
+    color:white;
+}
+.arrow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left:50%;
+    bottom:100%;
+    height:100%;
+    width: 50%;
+    
+}
+.arrow>i{
+    font-size:20vmax;
+    color:rgb(232, 10, 169);
+
+}
+.skills{
+    height:60%;
+    width: 100%;
+}
+.textarea{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left:8vmax;
+}
+.textarea>.circle{
+    height:1vmax;
+    width: 1vmax;
+   position: relative;
+   top:4vmax;
+   left:50px;
+    margin-left:10px;
+    background-color:rgb(232, 10, 169);
+
+}
+.textarea>h3{
+    color:white;
+    padding: 4vmax;
+}
+.textarea>.circle1{
+    border-radius: 50%;
+    height:1vmax;
+    width: 1vmax;
+    position: relative;
+    top:4vmax;
+    left:50px;
+    margin-left:0.5vmax;
+    background-color:rgba(232, 10, 169, 0.107);
+}
+.textarea2{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left:8vmax;
+}
+.textarea2>.circle{
+    height:1vmax;
+    width: 1vmax;
+   position: relative;
+   top:4vmax;
+   left: 75px;
+    margin-left:10px;
+    background-color:rgb(232, 10, 169);
+
+}
+.textarea2>h3{
+    color:white;
+    padding: 4vmax;
+}
+.textarea2>.circle1{
+    border-radius: 50%;
+    height:1vmax;
+    width: 1vmax;
+    position: relative;
+    top:4vmax;
+    margin-left:0.5vmax;
+    left:75px;
+    background-color:rgba(232, 10, 169, 0.107);
+}
+.textarea3{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left:8vmax;
+}
+.textarea3>.circle{
+    height:1vmax;
+    width: 1vmax;
+   position: relative;
+   top:4vmax;
+   left:-5px;
+    margin-left:10px;
+    background-color:rgb(232, 10, 169);
+
+}
+.textarea3>h3{
+    color:white;
+    padding: 4vmax;
+}
+.textarea3>.circle1{
+    border-radius: 50%;
+    height:1vmax;
+    width: 1vmax;
+    position: relative;
+    top:4vmax;
+    margin-left:0.5vmax;
+    
+    background-color:rgba(232, 10, 169, 0.107);
+}
+.textarea4{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left:8vmax;
+}
+.textarea4>.circle{
+    height:1vmax;
+    width: 1vmax;
+   position: relative;
+   top:4vmax;
+   left:30px;
+    margin-left:10px;
+    background-color:rgb(232, 10, 169);
+    
+}
+.textarea4>h3{
+    color:white;
+    padding: 4vmax;
+}
+
+.textarea4>.circle1{
+    border-radius: 50%;
+    height:1vmax;
+    width: 1vmax;
+    position: relative;
+    top:4vmax;
+    left:30px;
+    margin-left:0.5vmax;
+    
+    background-color:rgba(232, 10, 169, 0.107);
+}
+.textarea5{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left:50vmax;
+    bottom:15vmax;
+}
+.textarea5>.circle{
+    height:1vmax;
+    width: 1vmax;
+   position: relative;
+   top:4vmax;
+   left:30px;
+    margin-left:10px;
+    background-color:rgb(232, 10, 169);
+    
+}
+.textarea5>h3{
+    color:white;
+    padding: 4vmax;
+}
+
+.textarea5>.circle1{
+    border-radius: 50%;
+    height:1vmax;
+    width: 1vmax;
+    position: relative;
+    top:4vmax;
+    left:30px;
+    margin-left:0.5vmax;
+    
+    background-color:rgba(232, 10, 169, 0.107);
+}
+.page4{
+    display: flex;
+    height:100vh;
+    width:100vw;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+.leftpage{
+    height:100%;
+    width:70%;
+    
+}
+.leftpage>h1{
+    font-size:15vmax;
+    color:white;
+}
+.ri-arrow-right-line{
+   color: rgb(255, 4, 247);
+}
+.rightpage{
+    height:100%;
+    width:30%;
+   
+}
+.rightpage>.socialmedia{
+    position: relative;
+    top:5vmax;
+    left:50%;
+    height: 8vmax;
+    width: 8vmax;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2vmax;
+    margin:2vmax;
+}
+.insta{
+    height: 8vmax;
+    width: 8vmax;
+    position: relative;
+    top:-2vmax;
+    right:3vmax;
+}
+.twitter{
+    height: 8vmax;
+    width: 8vmax;
+    position: relative;
+    top:-2vmax;
+    right:3vmax;
+}
+.git{
+    height: 8vmax;
+    width: 8vmax;
+    position:relative;
+    top:8vmax;
+    right:10vmax;
+}
